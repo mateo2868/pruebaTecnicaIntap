@@ -1,0 +1,87 @@
+[
+  {
+    "ContainingType": "pruebaIntap2.Controllers.ActividadController",
+    "Method": "AgregarTiempo",
+    "RelativePath": "api/actividades/{id}/tiempos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "tiempo",
+        "Type": "pruebaIntap2.Models.TiempoActividad",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pruebaIntap2.Controllers.ActividadController",
+    "Method": "ObtenerTiempos",
+    "RelativePath": "api/actividades/{id}/tiempos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pruebaIntap2.Controllers.ActividadController",
+    "Method": "AgregarActividad",
+    "RelativePath": "api/actividades/actividad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Actividad",
+        "Type": "pruebaIntap2.Models.Activity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pruebaIntap2.Controllers.ActividadController",
+    "Method": "ObtenerPorUsuario",
+    "RelativePath": "api/actividades/usuario/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "pruebaIntap2.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "pruebaIntap2.Controllers.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

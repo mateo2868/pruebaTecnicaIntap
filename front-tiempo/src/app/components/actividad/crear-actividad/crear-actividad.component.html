@@ -1,0 +1,10 @@
+<div class="container mt-4">
+  <h4>Crear Nueva Actividad</h4>
+  <form (ngSubmit)="crearActividad()">
+    <div class="mb-3">
+      <label for="descripcion" class="form-label">Descripción</label>
+      <input type="text" id="descripcion" class="form-control" [(ngModel)]="descripcion" name="descripcion" required>
+    </div>
+    <button type="submit" class="btn btn-success">Guardar</button>
+  </form>
+</div>

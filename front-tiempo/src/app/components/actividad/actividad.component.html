@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <h3 class="mb-4">Mis Actividades</h3>
+
+  <button class="btn btn-sm btn-outline-primary mt-3" [routerLink]="'/crear-actividad'">Agregar actividad</button>
+
+  <div *ngFor="let actividad of actividades" class="card mb-3">
+    <div class="card-body">
+      <h5 class="card-title">{{ actividad.description }}</h5>
+
+      <ul class="list-group list-group-flush">
+        <li *ngFor="let tiempo of actividad.tiempos" class="list-group-item">
+          <strong>{{ tiempo.date | date:'dd/MM/yyyy' }}</strong> – {{ tiempo.hours }} hora{{ tiempo.hours > 1 ? 's' : '' }}
+        </li>
+      </ul>
+
+      <button class="btn btn-sm btn-outline-primary mt-3" (click)="abrirFormularioTiempo(actividad.id)">
+        Agregar Tiempo
+      </button>
+    </div>
+  </div>
+</div>

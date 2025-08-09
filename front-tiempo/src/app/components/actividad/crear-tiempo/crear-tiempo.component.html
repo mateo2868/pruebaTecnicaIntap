@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <h4>Agregar Tiempo a Actividad</h4>
+  <form (ngSubmit)="agregarTiempo()">
+    <div class="mb-3">
+      <label for="fecha" class="form-label">Fecha</label>
+      <input type="date" id="fecha" class="form-control" [(ngModel)]="fecha" name="fecha" required>
+    </div>
+    <div class="mb-3">
+      <label for="horas" class="form-label">Horas dedicadas</label>
+      <input type="number" id="horas" class="form-control" [(ngModel)]="horas" name="horas" min="1" max="8" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+    <div *ngIf="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}</div>
+  </form>
+</div>
